@@ -1,0 +1,88 @@
+.nav{
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 40px;
+    font-family: exo2;
+    border-bottom: 1px solid #ebebeb;
+    background-color: white;
+}
+
+@font-face {
+    font-family: exo2;
+    src: url(../public/Exo2-Bold.ttf);
+}
+
+.home:hover{
+    color: blue;
+}
+
+.contact:hover{
+    color: blue;
+}
+
+.cart:hover{
+    color: blue;
+}
+
+.cart{
+    background-color: white;
+    color: black;
+    border: none;
+    display: flex;
+    margin-left: 800px;
+    position: absolute;
+}
+
+i{
+    display: flex;
+    margin-top: 20px;
+}
+
+body{
+    background-color: white;
+}
+
+input{
+    display: flex;
+    margin-top: 10px;
+    width: 303px;
+    height: 10px;
+    padding: 10px;
+    font-size: 10px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.search:hover{
+    color: blue;
+}
+
+.search{
+    background-color: white;
+    color: black;
+    border: none;
+    display: flex;
+    margin-left: 700px;
+    position: absolute;
+}
+
+.cart-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.cart-count {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 2px 6px;
+    position: absolute;
+    top: 0px;
+    right: -10px; 
+}
