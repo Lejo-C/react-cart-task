@@ -1,0 +1,138 @@
+
+---
+
+1. Overall Functionality
+
+Fetches products from a public API (https://fakestoreapi.com/products)
+
+Displays the products in a grid
+
+Lets users add products to a cart (preventing duplicates)
+
+Users can view and remove products from the cart
+
+Displays total cart amount
+
+Basic site layout with a header, footer, product display, and cart page
+
+
+
+---
+
+2. Content Component (Product List)
+
+Uses useEffect to fetch product data from the Fake Store API when the component mounts.
+
+Stores product data in a products state using useState.
+
+Maps through products to display each one in a styled card:
+
+Image
+
+Title
+
+Price
+
+Description
+
+Category
+
+Rating
+
+
+Has an Add to Cart button:
+
+Prevents adding the same product twice
+
+Adds selected product to the cart state passed from the parent
+
+
+
+
+---
+
+3. Cart Component
+
+Displays all products added to the cart
+
+Each product shows:
+
+Image
+
+Title
+
+Price
+
+
+"Remove from Cart" button that deletes the product from the cart
+
+Shows total cart amount at the bottom using .reduce() to sum prices
+
+
+
+---
+
+4. Header Component
+
+Navigation bar with:
+
+Home link (/)
+
+Search input (not yet functional)
+
+Cart icon showing the number of items in the cart (with a badge)
+
+
+Links to the cart page
+
+
+
+---
+
+5. Footer Component
+
+Contains three informational sections:
+
+About the company
+
+Social media links
+
+Help and support
+
+
+
+
+---
+
+6. Styling
+
+CSS is organized into individual files:
+
+content.css for product list layout
+
+cart.css for cart display
+
+header.css and footer.css for styling those components
+
+
+Uses Font Awesome icons for cart, search, etc.
+
+
+
+---
+
+Technologies Used
+
+React for component-based UI
+
+React Router (as indicated by Link) for navigation
+
+Fake Store API as a data source
+
+CSS for styling
+
+Font Awesome for icons
+
+
+
+---
